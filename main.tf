@@ -19,8 +19,8 @@ data "google_project" "project" {
 }
 
 locals {
-  api_image = "gcr.io/sic-container-repo/todo-api-postgres:latest"
-  fe_image  = "gcr.io/sic-container-repo/todo-fe"
+  api_image = "gcr.io/sic-container-repo/todo-api-postgres:1.0.0"
+  fe_image  = "gcr.io/sic-container-repo/todo-fe:1.0.0"
 }
 
 module "project-services" {
